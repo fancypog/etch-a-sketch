@@ -1,14 +1,16 @@
-div {
+#grid {
     display: flex;
-    border-color: grey;
-    width: 50vw;
-    height: 50vw;
-
+    flex-wrap: wrap;
+    width: 60vw;
+    height: 60vw;
+    border: 1px solid grey;
 }
 
 .gridItem {
-    border: 1px solid lightgrey;
+    width: calc(100% /16);
+    height: calc(100% /16);
 }
+
 .gridItem:hover {
     background-color: blue;
 }
