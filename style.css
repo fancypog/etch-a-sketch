@@ -11,6 +11,6 @@
     height: calc(100% /16);
 }
 
-.gridItem:hover {
+.gridItem.hovered {
     background-color: blue;
 }
