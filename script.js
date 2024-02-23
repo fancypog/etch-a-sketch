@@ -12,3 +12,12 @@ for (let i = 0; i < rows; i++) {
     }
 }
 
+const gridItems = document.querySelectorAll('.gridItem');
+
+function markHover(event) {
+    event.target.classList.add('hovered');
+}
+
+gridItems.forEach(gridItem => {
+    gridItem.addEventListener('mouseenter', markHover)
+})
