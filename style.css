@@ -1,5 +1,7 @@
 div {
     display: flex;
     border-color: grey;
+    width: 50vw;
+    height: 50vw;
 
 }
