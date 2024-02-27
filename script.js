@@ -21,3 +21,13 @@ function markHover(event) {
 gridItems.forEach(gridItem => {
     gridItem.addEventListener('mouseenter', markHover)
 })
+
+
+const cleanCanvasButton = document.getElementById('cleanCanvas');
+const toClean = document.querySelectorAll('.hovered');
+
+cleanCanvasButton.addEventListener('click', function() {
+    toClean.forEach(element => {
+        element.classList.remove('hovered');
+    });
+});
