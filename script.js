@@ -23,11 +23,11 @@ gridItems.forEach(gridItem => {
 })
 
 
-const cleanCanvasButton = document.getElementById('cleanCanvas');
-const toClean = document.querySelectorAll('.hovered');
 
-cleanCanvasButton.addEventListener('click', function() {
+function cleanCanvas() {
+    const toClean = document.querySelectorAll('.hovered');
     toClean.forEach(element => {
-        element.classList.remove('hovered');
-    });
-});
+    element.classList.remove('hovered');
+    console.log('cleanCanvas function called');
+})
+}
